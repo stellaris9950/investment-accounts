@@ -45,7 +45,7 @@ def main():
             account_money_removed = int(input("Enter amount to withdraw:"))
             if account_money_removed <= accounts[account_selected]:
                 print(f"Account {account_selected} Previous balance: ${accounts[account_selected]}")
-                accounts[account_selected] -= account_money_add
+                accounts[account_selected] -= account_money_removed
                 print(f"Account {account_selected} New Balance: ${accounts[account_selected]}")
             else:
                 print(f"Sorry, Insufficent funds.")
